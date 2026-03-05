@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entropy</title>
+    <!-- 각진 느낌의 Inter 폰트 로드 -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -19,13 +21,14 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            font-family: 'Inter', -apple-system, sans-serif;
+            /* 절도 있는 폰트로 고정 */
+            font-family: 'Inter', sans-serif;
         }
 
         /* 제목 스타일 */
         h1 {
             font-size: clamp(3rem, 8vw, 5rem);
-            letter-spacing: 15px;
+            letter-spacing: 15px; /* 절도 있는 간격 */
             text-transform: uppercase;
             font-weight: 900;
             margin: 0 0 30px 0;
@@ -46,7 +49,7 @@
             animation: fadeIn 2s ease-out;
         }
 
-        /* Minnit Chat 하단 링크 제거 (선택사항) */
+        /* 하단 링크 제거 */
         .powered-by-minnit {
             display: none !important;
         }
@@ -62,16 +65,13 @@
     <h1>ENTROPY</h1>
 
     <div class="chat-wrapper">
-        <!-- Minnit Chat 임베드 코드 -->
-        <script src="https://minnit.chat/js/embed.js?c=1772345192" defer></script>
+        <!-- 요청하신 Entropy 전용 임베드 코드 적용 -->
+        <script src="https://minnit.chat" defer></script>
         <span class="minnit-chat-sembed" 
-              data-chatname="https://organizations.minnit.chat/482767668376267/c/Main?embed" 
+              data-chatname="https://organizations.minnit.chat" 
               data-style="width:100%; height:550px; max-height:80vh;" 
               data-version="1.55">Chat</span>
     </div>
-
-</body>
-</html>
 
 </body>
 </html>
