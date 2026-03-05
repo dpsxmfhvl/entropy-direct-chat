@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entropy</title>
-    <!-- 각진 느낌의 Inter 폰트 로드 -->
+    <!-- 각지고 절도 있는 Inter 폰트 로드 -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            /* 배경 설정 */
+            /* 배경 설정: Entropy.png 파일 필요 */
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Entropy.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            background-color: #000;
             color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            /* 절도 있는 폰트로 고정 */
             font-family: 'Inter', sans-serif;
         }
 
-        /* 제목 스타일 */
         h1 {
             font-size: clamp(3rem, 8vw, 5rem);
             letter-spacing: 15px; /* 절도 있는 간격 */
@@ -38,18 +37,18 @@
 
         /* 챗방 영역 스타일링 */
         .chat-wrapper {
-            width: 90%;
-            max-width: 900px;
+            width: 95%;
+            max-width: 1000px;
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border-radius: 10px;
             padding: 10px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             animation: fadeIn 2s ease-out;
         }
 
-        /* 하단 링크 제거 */
+        /* 하단 링크 제거 (깔끔한 디자인을 위해 유지) */
         .powered-by-minnit {
             display: none !important;
         }
@@ -65,13 +64,12 @@
     <h1>ENTROPY</h1>
 
     <div class="chat-wrapper">
-        <!-- 요청하신 Entropy 전용 임베드 코드 적용 -->
-        <script src="https://minnit.chat" defer></script>
-        <span class="minnit-chat-sembed" 
-              data-chatname="https://organizations.minnit.chat" 
-              data-style="width:100%; height:550px; max-height:80vh;" 
-              data-version="1.55">Chat</span>
+        <!-- 요청하신 임베드 코드 그대로 삽입 -->
+        <script src="https://minnit.chat/js/embed.js?c=1772345192" defer></script>
+        <span style="display: none;" class="minnit-chat-sembed" data-chatname="https://organizations.minnit.chat/482767668376267/c/Entropy?embed" data-style="width:100%; height:600px; max-height:85vh;" data-version="1.55">Chat</span>
+        <p class="powered-by-minnit"><a href="https://minnit.chat" target="_blank">Free embeddable chatroom powered by Minnit Chat</a></p>
     </div>
 
 </body>
 </html>
+
